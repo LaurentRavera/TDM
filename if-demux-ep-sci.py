@@ -2,7 +2,7 @@ import wavedrom
 svg = wavedrom.render("""
 { "signal" : 
 	[
-		["LINK 1",
+		["LINK 0",
 			{ "name": "CLK", "wave": "p...........", "period":2 },
 			{ "name": "CTRL", "wave": "01...=.0.=.0.=.0.....1..", "data": ["CTRLN [2]", "CTRLN [1]", "CTRLN [0]"] }, 
 			["DATA",
@@ -17,7 +17,7 @@ svg = wavedrom.render("""
 			]
 		],
 
-		["LINK 2",
+		["LINK 1",
 			{ "name": "CLK", "wave": "p...........", "period":2 },
 			{ "name": "CTRL", "wave": "01...=.0.=.0.=.0.....1..", "data": ["CTRLN [2]", "CTRLN [1]", "CTRLN [0]"] }, 
 			["DATA",
