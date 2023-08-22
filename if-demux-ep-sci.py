@@ -1,7 +1,10 @@
 import wavedrom
 svg = wavedrom.render("""
-{ "signal" : 
+{ 	"signal" : 
 	[
+		{},
+		{"node": ".A.........B", "period":2, "phase": 2},
+  
 		["LINK 0",
 			{ "name": "CLK", "wave": "p...........", "period":2 },
 			{ "name": "CTRL", "wave": "01...=.0.=.0.=.0.....1..", "data": ["CTRLN [2]", "CTRLN [1]", "CTRLN [0]"] }, 
@@ -16,6 +19,8 @@ svg = wavedrom.render("""
 				]
 			]
 		],
+  
+		{},
 
 		["LINK 1",
 			{ "name": "CLK", "wave": "p...........", "period":2 },
@@ -32,6 +37,10 @@ svg = wavedrom.render("""
 			]
 		]
 	],
+ 
+	"edge" : [ "A+B Trow=160ns"		
+	],
+
 	"config" : { "hscale" : 2 }
 } 
 """)
