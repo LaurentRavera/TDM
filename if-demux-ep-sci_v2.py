@@ -27,7 +27,7 @@ svg = wavedrom.render("""
 		]
 	],
  
-	"edge" : [ "A+B Trow=160ns"		
+	"edge" : [ "A<->B Trow=160ns"		
 	],
 
 	"config" : { "hscale" : 2 }
